@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="video">
+            <video src="Videos/article-1080p.mp4"  id="video_player"></video>
+            <!--controls-->
+            <div class="controls">
+                <button id="prev"><i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
+                <button data-skip="-10" id="skip_backward_btn"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+                <button id="play_pause_btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+                <button data-skip="10" id="skip_forward_btn"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+                <button id="next"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button> 
+            <!--video duration part-->
+                <div class="show_duration">
+                    <p id="current_duration">0:0</p>
+                    <p>/</p>
+                    <p id="total_duration">0:0</p>
+                </div>
+            </div>
+        </div>
+        <!--progress-bar-->
+        <div id="progress_bar">
+        </div>
+    </div>
+
+    <!--add js file-->
+    <script src="script.js"></script>
+</body>
+</html>
